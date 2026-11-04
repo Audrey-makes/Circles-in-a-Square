@@ -1,11 +1,6 @@
-# Packing results
+# Results
 
-**Audrey Hillenbrand**  
-University of Chicago Laboratory Schools High School
-
-287 material leads above 0.000001 and 39 unlisted counts, compared with the Packomania table downloaded on November 1, 2026. Smaller leads and near-ties are excluded. These results do not establish global optimality or website acceptance.
-
-[Download all scores and differences](data/RESULTS.csv). Displayed values are rounded; exact sums and differences appear in the CSV.
+335 packings: **287 material leads** above 0.000001 and **48 unlisted counts**, compared with the November 1, 2026 Packomania snapshot.
 
 | N | Radius sum, rounded | Website sum | Difference | Category |
 |---:|---:|---:|---:|---|
@@ -238,10 +233,13 @@ University of Chicago Laboratory Schools High School
 | [899](packings/csqv899.pck) | 16.002952105721 | Unlisted | — | Unlisted count |
 | [900](packings/csqv900.pck) | 16.011761950528 | 16.011101957177 | +0.000659993351 | Material lead |
 | [901](packings/csqv901.pck) | 16.019949654064 | Unlisted | — | Unlisted count |
+| [902](packings/csqv902.pck) | 16.027832014019 | Unlisted | — | Unlisted count |
 | [925](packings/csqv925.pck) | 16.229520447148 | 16.220391311081 | +0.009129136067 | Material lead |
+| [926](packings/csqv926.pck) | 16.238255999227 | Unlisted | — | Unlisted count |
 | [961](packings/csqv961.pck) | 16.547481408633 | 16.546730902423 | +0.000750506210 | Material lead |
 | [1013](packings/csqv1013.pck) | 16.994078819039 | 16.981739092804 | +0.012339726235 | Material lead |
 | [1022](packings/csqv1022.pck) | 17.067893470504 | Unlisted | — | Unlisted count |
+| [1023](packings/csqv1023.pck) | 17.076200190868 | Unlisted | — | Unlisted count |
 | [1024](packings/csqv1024.pck) | 17.084471242609 | 17.059358817280 | +0.025112425329 | Material lead |
 | [1025](packings/csqv1025.pck) | 17.089790179744 | Unlisted | — | Unlisted count |
 | [1026](packings/csqv1026.pck) | 17.098457646133 | Unlisted | — | Unlisted count |
@@ -327,6 +325,8 @@ University of Chicago Laboratory Schools High School
 | [8464](packings/csqv8464.pck) | 49.313541686853 | 49.312183798251 | +0.001357888602 | Material lead |
 | [8649](packings/csqv8649.pck) | 49.853206681701 | 49.837391057266 | +0.015815624435 | Material lead |
 | [8836](packings/csqv8836.pck) | 50.392759647784 | 50.391538228724 | +0.001221419060 | Material lead |
+| [8837](packings/csqv8837.pck) | 50.393791452064 | Unlisted | — | Unlisted count |
+| [8838](packings/csqv8838.pck) | 50.394794164504 | Unlisted | — | Unlisted count |
 | [9025](packings/csqv9025.pck) | 50.933825249218 | 50.928027389491 | +0.005797859727 | Material lead |
 | [9215](packings/csqv9215.pck) | 51.470253688853 | Unlisted | — | Unlisted count |
 | [9216](packings/csqv9216.pck) | 51.473208056748 | 51.472971482964 | +0.000236573784 | Material lead |
@@ -334,4 +334,8 @@ University of Chicago Laboratory Schools High School
 | [9409](packings/csqv9409.pck) | 52.006878291948 | 52.006229118365 | +0.000649173583 | Material lead |
 | [9604](packings/csqv9604.pck) | 52.531423674673 | 52.530893570441 | +0.000530104232 | Material lead |
 | [9801](packings/csqv9801.pck) | 53.068829058133 | 53.015624816539 | +0.053204241594 | Material lead |
+| [9802](packings/csqv9802.pck) | 53.069890739554 | Unlisted | — | Unlisted count |
+| [9803](packings/csqv9803.pck) | 53.070950293665 | Unlisted | — | Unlisted count |
 | [10000](packings/csqv10000.pck) | 53.610709771347 | 53.603343094111 | +0.007366677236 | Material lead |
+| [10001](packings/csqv10001.pck) | 53.611711991476 | Unlisted | — | Unlisted count |
+| [10002](packings/csqv10002.pck) | 53.612713916851 | Unlisted | — | Unlisted count |

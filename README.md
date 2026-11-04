@@ -3,7 +3,7 @@
 **Audrey Hillenbrand**  
 University of Chicago Laboratory Schools High School
 
-I study how to arrange circles of different sizes inside a square so that they do not overlap and the sum of their radii is as large as possible. This repository presents 326 packing results from that research.
+I study how to arrange circles of different sizes inside a square so that they do not overlap and the sum of their radii is as large as possible. This repository presents 335 packing results from that research.
 
 ## The problem
 
@@ -23,13 +23,17 @@ This differs from maximizing the area covered by the circles. A useful change ca
 
 I use a repeated cycle of **research → hypothesis → test → analysis → revision**. I study the problem, identify questions, design comparisons, assess the results, and use what I learn to guide the next experiments.
 
-I use Astra, an OpenAI ChatGPT model, to help implement and run tests and analyze their outcomes. My role is to direct the research, evaluate the evidence, and decide which ideas to pursue. Some experiments build on previously published packings.
+I direct the research, choose the tests, and assess the evidence. I use Astra, an OpenAI ChatGPT model, to help implement and run project code and analyze the outcomes. The project also uses and adapts published solvers, credited below.
 
 One important lesson is that improving a starting arrangement does not necessarily improve the best known result. I distinguish gains over an experiment's starting point from gains over my retained results and the published benchmark.
 
+## One experiment: choosing where to add circles
+
+I noticed that adding two circles could look especially attractive when both required shrinking the same neighbor: that neighbor loses only the larger of the two required cuts, rather than their sum. This immediate advantage did not reliably predict which arrangement would finish best. I tested a Zero-Shared menu that excluded these pairs, holding the donor packing, candidate-site pool, eight-start allowance, recovery and finishing procedures fixed against the original menus. At N=314, the completed comparison improved the radius sum by 0.000287309 over the strongest control, but the same top-eight policy lost at three of the other five counts. I therefore retained this idea as an additional route alongside the original routes, preserving their results rather than imposing the restriction on every start.
+
 ## How the generator works
 
-The generator is a program that creates candidate arrangements and searches for improvements. I developed it through repeated experiments comparing different starting geometries and ways of moving the circles. It has five main parts:
+The generator is a program that creates candidate arrangements and searches for improvements. It took shape through the experiments I selected and evaluated; Astra helped implement the project code, alongside the published tools credited below. It has five main parts:
 
 1. **Construct starting arrangements.** Create rows, triangular patterns and boundary arrangements with different orientations and offsets. This provides several starting points, including for circle counts without an existing packing.
 2. **Adapt nearby packings.** Use an arrangement with slightly fewer or more circles as a starting point. Add or remove circles, or split a circle or merge a pair. Selected older arrangements remain useful even after their own scores have been surpassed.
@@ -46,10 +50,12 @@ The comparisons use Packomania's table downloaded on **November 1, 2026**.
 | Category | Number of circle counts |
 |---|---:|
 | Scores exceeding the website by more than 0.000001 | 287 |
-| Counts absent from that website snapshot | 39 |
-| Total included | 326 |
+| Counts absent from that website snapshot | 48 |
+| Total included | 335 |
 
-The 0.000001 threshold is my reporting cutoff, not a stated Packomania acceptance rule. These are computational results, not proofs of global optimality. The 39 unlisted counts are potential additions to the website, rather than claims that those counts have never been studied.
+The initial release included 39 of the 48 unlisted counts found in this project. After additional contact finishing and construction, the remaining nine now meet the submission's 3N-contact criterion and are included here.
+
+The 0.000001 threshold is my reporting cutoff, not a stated Packomania acceptance rule. These are computational results, not proofs of global optimality. The 48 unlisted counts are potential additions to the website, rather than claims that those counts have never been studied.
 
 The largest absolute leads in this release are:
 
@@ -61,4 +67,23 @@ The largest absolute leads in this release are:
 | 1024 | 17.084471242609 | 17.059358817280 | +0.025112425329 |
 | 7744 | 47.154533578632 | 47.130009798205 | +0.024523780427 |
 
-The GitHub release and accompanying Packomania submission contain the same 326 packing files.
+The GitHub release and accompanying Packomania submission contain the same 335 packing files.
+
+## Verify it yourself
+
+Run `python3 verify_pck.py --all` from the repository folder; it uses Python 3.9 or later and no extra packages, and prints PASS or FAIL for each file.
+The checker reads the stored decimals as exact rational numbers, checks containment and non-overlap, and compares the exact radius sums with `data/RESULTS.csv`.
+Contact proximity is reported separately using a strict gap below 3e-12; it never permits overlap. These checks do not prove global optimality or establish website acceptance.
+
+## Acknowledgments
+
+Packomania, maintained by Eckard Specht, provided benchmark tables and published coordinates credited to its contributing record holders. Jason Liang's published packings and circle-packing solvers provided additional starting points and optimization tools. The adaptive-jam finishing branch uses a project implementation derived from Arnold Castro's adaptive-box method. These contributions are distinct from my experiment design and assessment of the results.
+
+## Release and submission status
+
+Repository created and initial results committed: November 4, 2026. Benchmark snapshot: November 1, 2026.
+Submitted to Packomania on November 4, 2026; acceptance pending.
+
+## Data license
+
+My contributions to the packing data and score tables are available under the Creative Commons Attribution 4.0 International license (CC BY 4.0). Please credit Audrey Hillenbrand, Circles in a Square, and identify any changes. Third-party rights and source credits remain applicable; see LICENSE.
