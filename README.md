@@ -21,6 +21,8 @@ This differs from maximizing the area covered by the circles. A useful change ca
 
 ## My research
 
+I worked on this from September to November 2026, about six hours a week, alongside school.
+
 I use a repeated cycle of **research → hypothesis → test → analysis → revision**. I study the problem, identify questions, design comparisons, assess the results, and use what I learn to guide the next experiments.
 
 I direct the research, choose the tests, and assess the evidence. I use Astra, an OpenAI ChatGPT model, to help implement and run project code and analyze the outcomes. The project also uses and adapts published solvers, credited below.
