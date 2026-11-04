@@ -3,7 +3,7 @@
 **Audrey Hillenbrand**  
 University of Chicago Laboratory Schools High School
 
-I study how to arrange circles of different sizes inside a square so that they do not overlap and the sum of their radii is as large as possible. This repository presents 335 results: 287 packings that beat Packomania’s published scores and 48 packings for circle counts not listed in its November 1, 2026 table.
+I study how to arrange circles of different sizes inside a square so that they do not overlap and the sum of their radii is as large as possible. This repository presents 335 packings from that research: as of Packomania's November 1, 2026 table, 287 beat its posted scores, plus 48 new counts the table does not list. All 335 were submitted to Packomania on November 4, 2026; acceptance is pending.
 
 ## The problem
 
