@@ -55,7 +55,7 @@ The comparisons use Packomania's table downloaded on **November 1, 2026**.
 | Counts absent from that website snapshot | 48 |
 | Total included | 335 |
 
-The initial release included 39 of the 48 unlisted counts found in this project. After additional contact finishing and construction, the remaining nine now meet the submission's 3N-contact criterion and are included here.
+The initial release included 39 of the 48 unlisted counts found in this project. After additional contact finishing and construction, the remaining nine now meet Packomania's 3N-contact criterion (at least 3N contacts in total between circles or between circles and walls, where N is the number of circles) and are included here.
 
 The 0.000001 threshold is my reporting cutoff, not a stated Packomania acceptance rule. These are computational results, not proofs of global optimality. The 48 unlisted counts are potential additions to the website, rather than claims that those counts have never been studied.
 
